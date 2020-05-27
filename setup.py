@@ -62,7 +62,7 @@ extra_compile_args = []
 if ccompiler.get_default_compiler() == "msvc":
     extra_compile_args.append("/utf-8")
 else:
-    extra_compile_args.append('-std=c++17')
+    extra_compile_args.append('')
 
 
 sxtwl_module = setuptools.Extension('_sxtwl',
