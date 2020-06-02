@@ -91,5 +91,6 @@ setuptools.setup(
     packages=setuptools.find_packages(), 
     ext_modules = [sxtwl_module],
     py_modules = ["sxtwl"],  
+	python_requires='3.7',
     
 )
