@@ -11,15 +11,15 @@ if _swig_python_version_info >= (2, 7, 0):
         pkg = __name__.rpartition('.')[0]
         mname = '.'.join((pkg, '_sxtwl')).lstrip('.')
         try:
-            module_spec = importlib.util.spec_from_file_location('_sxtwl','_sxtwl.cpython-38-x86_64-linux-gnu.so')
-            module = importlib.util.module_from_spec(module_spec)
-			return module
-            #return importlib.import_module(mname)
+            #module_spec = importlib.util.spec_from_file_location('_sxtwl','_sxtwl.cpython-38-x86_64-linux-gnu.so')
+            #module = importlib.util.module_from_spec(module_spec)
+			#return module
+            return importlib.import_module(mname)
         except ImportError:
-            module_spec = importlib.util.spec_from_file_location('_sxtwl','_sxtwl.cpython-38-x86_64-linux-gnu.so')
-            module = importlib.util.module_from_spec(module_spec)
-			return module
-            #return importlib.import_module('_sxtwl')
+            #module_spec = importlib.util.spec_from_file_location('_sxtwl','_sxtwl.cpython-38-x86_64-linux-gnu.so')
+            #module = importlib.util.module_from_spec(module_spec)
+			#return module
+            return importlib.import_module('_sxtwl')
     _sxtwl = swig_import_helper()
     del swig_import_helper
 elif _swig_python_version_info >= (2, 6, 0):
